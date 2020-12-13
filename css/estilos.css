@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');          /* Letras del texto */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');                      /* Letras de títulos */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@1,700&display=swap'); /* Letras profesorado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+/* Tamaño del texto principal*/
+header nav a, main p, main ul li, label {
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
+#participantes .comentario {
+    font-size: 1em;
+}
+@media (min-width: 768px) {
+    header nav a, main p, main ul li, label {
+        font-size: 1.3em;
+        line-height: 2em;
+    }
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+/* Cabecera */
+header div.container-fluid {
+    background: url(../img/teclado.png);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+h1, header p {
+    font-family: 'Arvo', serif;
+    color: #283c63;
+}
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+header p {
+    font-size: 18px;
+    margin: 0;
+}
+header nav.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+header nav a {
+    color: white;
+}
+header .navbar {
+    padding: 0 10px;
+}
+header .navbar-brand {
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+}
+header .nav-link {
+    color: white;
+    padding: 15px;
+    width: 150px;
+}
+header .navbar-dark .navbar-nav .nav-link:hover {
+    color: #000;
+    background-color: white;
+    height: 100%;
+}
+header .negro {
+    background-color: #2A2A2A;
+}
+header div.fondoTitulo {
+    width: 90%;
+    max-width: 900px;
+    background-color:rgba(255,255,255,0.5); 
+    border-radius: 4px;
+    padding: 40px;
+    box-shadow: 10px 30px rgba(0,0,0,0.5);
+}
+header div.fondoTitulo div {
+    margin-top: 20px;
+}
+header div.fondoTitulo div a{
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #283c63;
+    color: white;
+}
+header div.fondoTitulo div a:hover {
+    background-color: #56a7a7;
+    text-decoration: none;
+}
+header div.fondoTitulo div a:active {
+    background-color: #a0dbdb;
+    color: black;
+}
+/* Cabecera Responsive*/
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+    header p {
+        font-size: 18px;
+    }
+    header div.fondoTitulo {
+        width: 75%;
+    }
+}
+@media (min-width: 992px) {
+    h1 {
+        font-size: 4em;
+    }
+    header p {
+        font-size: 24px;
+    }
+    header div.fondoTitulo {
+        width: 60%;
+    }
+}
+/* Secciones */
+section {
+    padding: 100px 0;
+}
+h2 {
+    font-family: 'Arvo', serif;
+    color: #56a7a7;
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+h2.cambio {
+    color: #56a7a7;
+}
+#contenido, #participantes {
+    background-color: white;
+}
+#curso, #profesorado, #contacto {
+    background-color: #E0FFFF;
+}
+abbr[title] {
+    text-decoration: none;
+    cursor: default;
+}
+/* Contenido */
+#contenido img {
+    border-radius: 4px;
+}
+#contenido b, #contenido b abbr {
+    font-family: 'Arvo', serif;
+}
+#contenido p:nth-child(1) {
+    color: #56a7a7;
+    font-size: 2em;
+}
+#contenido div.diferencia {
+    padding-bottom: 50px;
+}
+/* Profesorado */
+#profesorado p:first-of-type {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 2.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#profesorado div div div:first-of-type {
+    padding-bottom: 100px;
+}
+/* Icono */
+.image {
+    display: block;
+    height: 100px;
+    width: auto;
+}
+/* Participantes */
+#participantes .comentario {
+    margin: auto;
+    padding: 0 10px;
+}
+#participantes p {
+    text-align: center;
+}
+/* CSS del plugin slider */
+#exampleSlider {
+    position: relative;      
+}
+#exampleSlider .MS-content {
+    white-space: nowrap;     
+    overflow: hidden;        
+    margin: 0 5%;            
+}
+#exampleSlider .MS-content .item {
+    display: inline-block;   
+    width: 100%;              
+    position: relative;      
+    vertical-align: top;     
+    overflow: hidden;        
+    height: 100%;            
+    white-space: normal;     
+}
+#exampleSlider .MS-controls button {
+    position: absolute;      
+    top: 100px;
+    border: 0;
+    background-color: white;
+    color: #56a7a7;
+}
+#exampleSlider .MS-controls .MS-left {
+    left: 10px;
+}
+#exampleSlider .MS-controls .MS-right {
+    right: 10px;
+}
+/* Plugin Responsive */
+@media (min-width: 768px) {
+    #exampleSlider .MS-content .item {
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    #exampleSlider .MS-content .item {
+        width: 33%;
+    }
+}
+/* Fin CSS plugin */
+/* Contacto */
+#contacto img {
+    margin-right: 20px;
+}
+/* Formulario */
+form {
+    margin-top: 50px;
+}
+form input {
+    padding: 8px;
+    display: block;
+    width: 100%;
+}
+form input:hover {
+    background-color: #E0E0E0;
+    border-radius: 4px;
+    border-color: #000;
+}
+form label, form button {
+    margin: 10px 0;
+}
+form button {
+    padding: 8px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #56a7a7;
+    color: white;
+    border: 0;
+}
+form button:hover {
+    background-color: #283c63;
+}
+form button:active {
+    background-color: #a0dbdb;
+    color: black;
+}
+#mensaje a {
+    color: #000080;
+}
+#mensaje a:hover {
+    color: #000;
+}
+/* Secciones Responsive*/
+@media (min-width: 768px) {
+    h2 {
+        font-size: 3.8em;
+    }
+    #profesorado p:first-of-type {
+        font-size: 3em;
+    }
+    #profesorado div div div:first-of-type {
+        padding-bottom: 0;
+    }
+    form input, form label {
+        display: block;
+    }
+    form {
+        margin-top: 0;
+    }
+    form input {
+        margin: auto;
+    }
+    #contacto div.container {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 992px) {
+    h2.col-lg-3 {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+/* Pie de página */
+footer {
+    background-color: #2A2A2A;
+    padding: 80px 0 50px;
+    text-align: center;
+}
+footer p {
+    color: lightgray;
+    margin: 0;
+    font-size: 0.8em;
+}
+footer a {
+    color: lightgray;
+}
+footer ul li {
+    list-style-type: none;
+    padding: 0 20px;
+    margin: 10px;
+}
+footer ul li a:hover {
+    color: lightgray;
+}
